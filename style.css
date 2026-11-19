@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1020;
+    color: white;
+}
+
+/* NAVBAR */
+
+header {
+    background: #11182b;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #a78bfa;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #a78bfa;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* HOME */
+
+.home {
+    min-height: 90vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #67e8f9;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #a78bfa;
+}
+
+.home h2 {
+    color: #67e8f9;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    color: #b0b9ce;
+    line-height: 1.9;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #a78bfa, #67e8f9);
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: #0b1020;
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 20px #a78bfa55;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 1px solid #a78bfa;
+    margin-left: 10px;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #67e8f9;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #a78bfa;
+}
+
+/* PROFILE */
+
+.profile img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #a78bfa;
+    box-shadow: 0 0 35px #a78bfa66;
+}
+
+/* COMMON SECTION */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.heading span {
+    color: #a78bfa;
+}
+
+/* ABOUT */
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 30px;
+    background: #151e34;
+    border-radius: 15px;
+    border: 1px solid #303b58;
+}
+
+.about-box p {
+    color: #bdc5d7;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+/* SKILLS */
+
+.dark-section {
+    background: #11182b;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 30px;
+    background: #1a2540;
+    border-radius: 12px;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #a78bfa;
+}
+
+.skill-card h3 {
+    color: #67e8f9;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #aab5ca;
+    font-size: 13px;
+}
+
+/* PROJECTS */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #151e34;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    border: 1px solid #303b58;
+    transition: .3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #a78bfa;
+}
+
+.project-card h3 {
+    color: #67e8f9;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #b0b9ce;
+    line-height: 1.8;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.project-card span {
+    color: #a78bfa;
+    font-size: 12px;
+}
+
+/* EDUCATION */
+
+.education-box {
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    background: #1a2540;
+    border-radius: 15px;
+    border-left: 5px solid #a78bfa;
+}
+
+.education-box h3 {
+    color: #67e8f9;
+    margin-bottom: 15px;
+}
+
+.education-box p {
+    color: #c0c9db;
+    margin: 8px;
+}
+
+/* CONTACT */
+
+.contact-info {
+    margin-bottom: 30px;
+    color: #b8c1d4;
+}
+
+.contact-info p {
+    margin: 10px;
+}
+
+.contact-info a {
+    color: #67e8f9;
+    text-decoration: none;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    background: #151e34;
+    border: 1px solid #303b58;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a78bfa;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+form .btn {
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #080d19;
+    color: #aab5ca;
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #11182b;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .home h2 {
+        font-size: 17px;
+    }
+
+    .profile img {
+        width: 220px;
+        height: 250px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .heading {
+        font-size: 29px;
+    }
+
+    .buttons .btn {
+        margin: 5px;
+    }
+}
